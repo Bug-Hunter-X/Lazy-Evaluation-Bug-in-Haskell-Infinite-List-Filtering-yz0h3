@@ -1,0 +1,3 @@
+# Lazy Evaluation Bug in Haskell Infinite List Filtering
+
+This repository demonstrates a subtle bug in Haskell code that arises from lazy evaluation when dealing with infinite lists. The `filterEven` function, designed to filter even numbers from a list, enters an infinite loop if it encounters an odd number followed by an infinite list.  This is because Haskell's lazy evaluation only computes values as needed.  The solution showcases a way to mitigate this problem using strict evaluation.
